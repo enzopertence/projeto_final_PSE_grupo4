@@ -17,7 +17,7 @@ double ler_NTC() {
   
   double tensao = 0.004883 * leitura;   // (5V/1024)
 
-  double resistencia = (8000 * tensao) / (5 - tensao); // divisor de tensao
+  double resistencia = (10000 * tensao) / (5 - tensao); // divisor de tensao
 
   double temperaturaK = 1 / (0.0033557 + (log(resistencia/R0))/BETA); // formula NTC
   
